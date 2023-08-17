@@ -1,0 +1,21 @@
+.cards {
+	padding: 134px 0 256px 0;
+	&__title {
+		font-size: 42px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: var(--white);
+		margin-bottom: 53px;
+	}
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-auto-rows: 621px;
+		gap: 30px;
+		margin-bottom: 60px;
+	}
+	&__btn-load-more {
+		display: block;
+		margin: 0 auto;
+	}
+}

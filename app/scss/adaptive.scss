@@ -1,0 +1,278 @@
+@media (max-width: 1700px) {
+	.cards {
+		&__list {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+}
+@media (max-width: 1600px) {
+	.header {
+		&__left {
+			flex-grow: 1;
+		}
+		&__menu {
+			flex-grow: 1;
+			margin: 0 auto;
+			display: block;
+			display: flex;
+			justify-content: center;
+		}
+		&__menu-list {
+			gap: 30px;
+		}
+		&__btn-application {
+			padding: 21px 38px;
+			margin: 0 24px 0 0;
+		}
+		&__logo-link {
+			margin: 0;
+		}
+	}
+	.cards {
+		padding: 44px 0 156px 0;
+	}
+}
+
+@media (max-width: 1400px) {
+	.header {
+		&__menu {
+			font-weight: 400;
+		}
+	}
+}
+@media (max-width: 1300px) {
+	.header {
+		&__menu {
+			font-size: 12px;
+			font-weight: 400;
+		}
+
+	}
+	.cards {
+		&__list {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+}
+@media (max-width: 1230px) {
+	.container {
+		padding: 0 40px;
+	}
+	.header {
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: 9;
+		&__menu {
+			display: none;
+		}
+		&__burger-btn {
+			margin-right: 40px;
+			display: block;
+		}
+	}
+	.hero {
+		margin-top: 116px;
+		padding-bottom: 76px;
+		background-image: linear-gradient(to bottom, transparent 70%, var(--main) 100%), url('../img/hero-bg-m.jpg');
+	}
+}
+
+@media (max-width: 1024px) {
+	.cards {
+		&__list {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}
+@media (max-width: 900px) {
+	.header {
+		&__logo-link {
+			margin: 0 auto;
+		}
+		&__burger-btn {
+			margin: 0px;
+		}
+	}
+	.hero {
+		&__title {
+			font-size: 38px;
+		}
+		&__subtitle {
+			max-width: 460px;
+		}
+	}
+	.popup {
+		&__box {
+			width: 500px;
+		}
+		&__form {
+	        width: 60%;
+	        font-size: 20px;
+	    }
+	    &__input-box {
+	        width: 100%;
+	        margin-bottom: 20px;
+	    }
+	    &__input-box.error &__input {
+	        border: 2px solid red;
+	    }
+	    &__input {
+	        border: 2px solid var(--light-dark);
+	        border-radius: 5px;
+	        width: 100%;
+	        padding: 10px;
+	        font-size: 18px;
+	    }
+	    &__title {
+	    	font-size: 16px;
+	    }
+	    &__btn-send {
+        	padding: 14px 20px;
+	    	font-size: 14px;
+	    }
+	}
+}
+
+@media (max-width: 680px) {
+	.container {
+		padding: 0 18px;
+	}
+	.header {
+		&__inner {
+			height: 70px;
+		}
+		&__right {
+			display: none;
+		}
+		&__left {
+			justify-content: space-between;
+		}
+		&__logo-link {
+			margin: 0;
+		}
+		&__mobile-menu {
+			height: calc(100vh - 70px);
+			font-size: 20px;
+		}
+	}
+	.mobile-menu {
+		&__btn-application {
+			visibility: visible;
+			opacity: 1;
+		}
+		&__btn-call {
+			visibility: visible;
+			opacity: 0.4;
+		}
+	}
+	.hero {
+		margin-top: 70px;
+		padding-bottom: 52px;
+	}
+	.cards {
+		&__list {
+			grid-template-columns: repeat(1, minmax(auto, 400px));
+			justify-content: center;
+		}
+		&__title {
+			text-align: center;
+		}
+	}
+	.popup {
+		&__title {
+			margin-bottom: 30px;
+		}
+		&__btn-send {
+			margin-top: 0;
+		}
+		&__btn-close {
+	        top: 10px;
+	        right: 10px;
+		}
+		&__btn-close svg {
+	        transform: scale(0.6);
+		}
+	}
+
+}
+
+@media (max-width: 540px) {
+	.hero {
+		background-image: linear-gradient(to bottom, transparent 70%, var(--main) 100%), url('../img/hero-bg-s.jpg');
+		&__title {
+			font-size: 20px;
+		}
+		&__subtitle {
+			max-width: 293px;
+			font-size: 14px;
+		}
+		&__btn {
+			padding: 14px 46px;
+		}
+	}
+	.mobile-menu {
+		&__btn-call {
+			margin-bottom: 6px;
+		}
+		&__btn-call, &__btn-application {
+			width: 90%;
+		}
+	}
+	.cards {
+		padding: 48px 0 43px 0;
+		&__title {
+			font-size: 20px;
+		}
+	}
+	.popup {
+		&__form {
+			width: 80%;
+		}
+		&__box {
+	        padding: 50px 0;
+	        width: 400px;
+	        border-radius: 10px;
+	    }
+	    &__input {
+	        border: 2px solid var(--light-dark);
+	        border-radius: 5px;
+	        width: 100%;
+	        padding: 12px;
+	        font-size: 14px;
+	    }
+	    &__input-box {
+	        width: 100%;
+	        margin-bottom: 14px;
+	    }
+	    &__btn-send {
+	        padding: 12px 10px;
+	        font-size: 12px;
+	        margin-top: 14px;
+	    }
+
+	}
+
+}
+@media (max-width: 430px) {
+	.cards {
+		&__title {
+			text-align: left;
+		}
+	}
+	.popup {
+		&__box {
+	        padding: 30px 0;
+	        width: 300px;
+	    }
+	    &__input {
+	        padding: 10px;
+	        font-size: 14px;
+	    }
+	    .error-label {
+			font-size: 10px;
+			margin-bottom: 4px;
+		}
+	}
+}
+

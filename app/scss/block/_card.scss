@@ -1,0 +1,79 @@
+.card {
+	transition: transform 0.4s;
+	overflow: hidden;
+	&:hover {
+		transform: translateY(-14px);
+	}
+	&:hover &__img-wrap::before {
+		width: 100%;
+	}
+	&:hover &__btn {
+		background: var(--gold);
+	}
+	&__link {
+		height: 100%;
+		display: block;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+	}
+	&__img-wrap {
+		height: 185px;
+		overflow: hidden;
+	}
+	&__img {
+		width: 100%;
+		height: 100%;
+		display: block;
+		object-fit: cover;
+		object-position: center center;
+		transform: scale(1.01);
+	}
+	&__text {
+		height: 100%;
+		flex-grow: 1;
+		background: var(--white);
+		color: var(--dark);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 20px;
+		padding: 25px 25px 30px 25px;
+	}
+	&__title {
+		font-family: 'Mulish';
+		font-weight: 700;
+		font-size: 14px;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+		line-height: 26px;
+	}
+	&__subtitle {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 26px;
+	}
+	&__description {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 25px;
+		color: var(--light-dark);
+	}
+	&__author-post {
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 24px;
+		color: var(--light-dark);
+	}
+	&__btn {
+		position: relative;
+		padding: 16px;
+		color: var(--white);
+		background: var(--dark);
+		margin-top: 5px;
+		overflow: hidden;
+		transition: 0.3s;
+		text-align: center;
+	}
+}
+

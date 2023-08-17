@@ -1,0 +1,47 @@
+.btn-slash {
+	background: var(--gold);
+	position: relative;
+	transform: skew(-17deg);
+	padding: 21px 78px;
+	text-transform: uppercase;
+	color: var(--white);
+	font-size: 12px;
+	transition: outline 0.3s ease;  
+	outline: 1px solid var(--gold);
+	&:hover {
+		outline: 1px solid var(--white);
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: -13px;
+		width: 6px;
+		height: 100%;
+		background: var(--white);
+	}
+	&::before {					
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;			
+		background: var(--dark);
+		transform: scaleX(0);	
+		transform-origin: right;
+		transition: transform 0.5s;
+		z-index: -1;
+	}
+	&:hover::before {
+		transform: scaleX(1);
+		transform-origin: left;
+	}
+	&__text {
+		display: inline-block;
+		transform: skew(17deg);
+		font-size: 12px;
+		font-weight: 700;
+	}
+}

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/adaptive.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__left">
+					<button class="burger-btn header__burger-btn">
+						<svg width="37" height="31" viewBox="0 0 37 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.08333 7.74366C3.08333 7.03325 3.77092 6.45845 4.61729 6.45845L16.966 6.45845C17.3729 6.45845 17.763 6.59386 18.0507 6.83488C18.3384 7.07591 18.5 7.4028 18.5 7.74366C18.5 8.08452 18.3384 8.41142 18.0507 8.65244C17.763 8.89347 17.3729 9.02887 16.966 9.02887L4.61729 9.02887C3.76938 9.02887 3.08333 8.45408 3.08333 7.74366Z" fill="white"/>
+							<path d="M3.08319 15.5001C3.08319 14.7897 3.77078 14.2149 4.61715 14.2149L32.3826 14.2149C32.7894 14.2149 33.1796 14.3503 33.4672 14.5913C33.7549 14.8323 33.9165 15.1592 33.9165 15.5001C33.9165 15.8409 33.7549 16.1678 33.4672 16.4088C33.1796 16.6499 32.7894 16.7853 32.3826 16.7853L4.61715 16.7853C3.76924 16.7853 3.08319 16.2092 3.08319 15.5001Z" fill="white"/>
+							<path d="M4.61716 21.9713C4.21033 21.9713 3.82016 22.1067 3.53249 22.3477C3.24481 22.5887 3.0832 22.9156 3.0832 23.2565C3.0832 23.5973 3.24481 23.9242 3.53249 24.1653C3.82016 24.4063 4.21033 24.5417 4.61716 24.5417L23.1326 24.5417C23.334 24.5417 23.5335 24.5084 23.7196 24.4439C23.9057 24.3793 24.0748 24.2846 24.2172 24.1653C24.3597 24.0459 24.4727 23.9042 24.5498 23.7483C24.6269 23.5924 24.6665 23.4253 24.6665 23.2565C24.6665 23.0877 24.6269 22.9206 24.5498 22.7647C24.4727 22.6087 24.3597 22.467 24.2172 22.3477C24.0748 22.2284 23.9057 22.1337 23.7196 22.0691C23.5335 22.0045 23.334 21.9713 23.1326 21.9713L4.61716 21.9713Z" fill="white"/>
+						</svg>
+					</button>
+					<a href="" class="header__logo-link">
+						<picture class="gender__img-wrap">
+							<source srcset="img/logo-s.svg" media="(max-width: 680px)">
+							<img class="header__logo-img" src="img/logo.svg" alt="">
+						</picture>
+					</a>
+					<div class="header__menu">
+						<ul class="header__menu-list">
+							<li class="header__menu-item">
+								<a href="" class="header__menu-link">услуги</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="" class="header__menu-link">абонементы</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="" class="header__menu-link">почему мы</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="" class="header__menu-link">оборудование</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="" class="header__menu-link">акции</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="" class="header__menu-link">faq</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="" class="header__menu-link">контакты</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="header__right">
+					<button class="header__call-btn">
+						<svg class="header__call-btn-svg" width="93" height="60" viewBox="0 0 93 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g>
+								<path d="M0.875027 59.5L19.0667 0.5H92.0202L73.8286 59.5H0.875027Z" stroke="white"/>
+								<path d="M49.5318 34.2139L51.254 32.491C51.486 32.2618 51.7794 32.1049 52.0988 32.0394C52.4182 31.9739 52.7497 32.0025 53.0531 32.1218L55.152 32.9602C55.4586 33.0847 55.7215 33.2972 55.9076 33.5709C56.0937 33.8447 56.1946 34.1674 56.1976 34.4985V38.3442C56.1958 38.5694 56.1485 38.7919 56.0585 38.9983C55.9685 39.2047 55.8377 39.3908 55.6739 39.5453C55.5101 39.6998 55.3168 39.8195 55.1056 39.8973C54.8943 39.9751 54.6695 40.0093 54.4447 39.9979C39.7368 39.0826 36.7691 26.6224 36.2079 21.8537C36.1818 21.6195 36.2056 21.3825 36.2777 21.1581C36.3498 20.9338 36.4686 20.7273 36.6262 20.5522C36.7838 20.3771 36.9766 20.2374 37.1921 20.1422C37.4076 20.047 37.6407 19.9986 37.8762 20H41.5897C41.9211 20.001 42.2446 20.1011 42.5186 20.2876C42.7927 20.474 43.0047 20.7381 43.1274 21.0461L43.9654 23.1458C44.0886 23.4482 44.1201 23.7801 44.0558 24.1002C43.9915 24.4203 43.8344 24.7144 43.6041 24.9456L41.8819 26.6685C41.8819 26.6685 42.8737 33.3832 49.5318 34.2139Z" fill="white"/>
+							</g>
+						</svg>
+					</button>
+					<button class="btn-slash send-application header__btn-application">
+						<span class="btn-slash__text">
+							оставить заявку
+						</span>
+					</button>
+				</div>
+			</div>
+		</div>
+		
+	</header>
+	<div class="mobile-menu header__mobile-menu">
+		<div class="container">
+			<ul class="mobile-menu__list">
+				<li class="mobile-menu__item">
+					<a href="#" class="mobile-menu__link">услуги</a>
+				</li>
+				<li class="mobile-menu__item">
+					<a href="#" class="mobile-menu__link">абонементы</a>
+				</li>
+				<li class="mobile-menu__item">
+					<a href="#" class="mobile-menu__link">почему мы</a>
+				</li>
+				<li class="mobile-menu__item">
+					<a href="#" class="mobile-menu__link">оборудование</a>
+				</li>
+				<li class="mobile-menu__item">
+					<a href="#" class="mobile-menu__link">акции</a>
+				</li>
+				<li class="mobile-menu__item">
+					<a href="#" class="mobile-menu__link">faq</a>
+				</li>
+				<li class="mobile-menu__item">
+					<a href="#" class="mobile-menu__link">контакты</a>
+				</li>
+			</ul>
+			<button class="mobile-menu__btn-call">
+				<img src="img/call-img.svg" alt="" class="mobile-menu__call-img">
+			</button>
+			<button class="send-application mobile-menu__btn-application">
+				<span class="mobile-menu__application-text">
+					оставить заявку
+				</span>
+			</button>
+		</div>
+	</div>
+	<div class="popup">
+		<div class="popup__box">
+			<button class="popup__btn-close">
+                <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                        fill="#333333" />
+                    <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333" />
+                </svg>
+            </button>
+			<h1 class="popup__title">Введите данные</h1>
+			<form action="#" class="popup__form">
+					<div class="popup__input-box">
+						<input class="popup__input" name="username" type="text" placeholder="имя">
+					</div>
+					<div class="popup__input-box">
+						<input class="popup__input" name="email" type="text" placeholder="email">
+					</div>
+					<div class="popup__input-box">
+						<input class="popup__input" name="tel" type="text" placeholder="телефон">
+					</div>
+				<button type="submit" class="popup__btn-send">
+					<span class="popup__btn-send-text">отправить заявку</span>
+					<svg class="popup__btn-send-check" role="img" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path fill="white" d="M1.00000001 7.71134025l3.83505154 3.8041237 8.16494844-8.16494844-.86597938-.86597938L4.83505155 9.7835052 1.86597939 6.81443303z"/></svg>
+				</button>
+			</form>
+		</div>
+	</div>
+	<main>
+		<section class="hero">
+			<div class="container hero__container">
+				<h1 class="hero__title">Полет Илона Маска <br> и  DOGIE COIN</h1>
+				<h6 class="hero__subtitle">В прошлый четверг все офигели от полета DOGIE COIN на марс.</h6>
+				<button class="btn-slash send-application hero__btn">
+					<span class="btn-slash__text">
+						оставить заявку
+					</span>
+				</button>
+			</div>
+		</section>
+		<section class="cards">
+			<div class="container">
+				<h2 class="cards__title">карточки</h2>
+				<ul class="cards__list">
+					<li class="card">
+						<a href="" class="card__link">
+							<div class="card__img-wrap">
+								<img src="img/cards/1.jpg" alt="" class="card__img">
+							</div>
+							<div class="card__text">
+								<h4 class="card__title">bridge</h4>
+								<h6 class="card__subtitle">How to increase your productivity with a Music</h6>
+								<p class="card__description">
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
+								</p>
+								<span class="card__author-post">Posted by <b>Eugenia</b>, on July  24, 2019</span>
+								<div class="card__btn">
+									<span class="card__btn-text">Continue reading</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="card">
+						<a href="" class="card__link">
+							<div class="card__img-wrap">
+								<img src="img/cards/2.jpg" alt="" class="card__img">
+							</div>
+							<div class="card__text">
+								<h4 class="card__title">bridge</h4>
+								<h6 class="card__subtitle">How to increase your productivity with a Music</h6>
+								<p class="card__description">
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
+								</p>
+								<span class="card__author-post">Posted by <b>Eugenia</b>, on July  24, 2019</span>
+								<div class="card__btn">
+									<span class="card__btn-text">Continue reading</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="card">
+						<a href="" class="card__link">
+							<div class="card__img-wrap">
+								<img src="img/cards/3.jpg" alt="" class="card__img">
+							</div>
+							<div class="card__text">
+								<h4 class="card__title">bridge</h4>
+								<h6 class="card__subtitle">How to increase your productivity with a Music</h6>
+								<p class="card__description">
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
+								</p>
+								<span class="card__author-post">Posted by <b>Eugenia</b>, on July  24, 2019</span>
+								<div class="card__btn">
+									<span class="card__btn-text">Continue reading</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="card">
+						<a href="" class="card__link">
+							<div class="card__img-wrap">
+								<img src="img/cards/4.jpg" alt="" class="card__img">
+							</div>
+							<div class="card__text">
+								<h4 class="card__title">bridge</h4>
+								<h6 class="card__subtitle">How to increase your productivity with a Music</h6>
+								<p class="card__description">
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
+								</p>
+								<span class="card__author-post">Posted by <b>Eugenia</b>, on July  24, 2019</span>
+								<div class="card__btn">
+									<span class="card__btn-text">Continue reading</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="card">
+						<a href="" class="card__link">
+							<div class="card__img-wrap">
+								<img src="img/cards/5.jpg" alt="" class="card__img">
+							</div>
+							<div class="card__text">
+								<h4 class="card__title">bridge</h4>
+								<h6 class="card__subtitle">How to increase your productivity with a Music</h6>
+								<p class="card__description">
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
+								</p>
+								<span class="card__author-post">Posted by <b>Eugenia</b>, on July  24, 2019</span>
+								<div class="card__btn">
+									<span class="card__btn-text">Continue reading</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="card">
+						<a href="" class="card__link">
+							<div class="card__img-wrap">
+								<img src="img/cards/6.jpg" alt="" class="card__img">
+							</div>
+							<div class="card__text">
+								<h4 class="card__title">bridge</h4>
+								<h6 class="card__subtitle">How to increase your productivity with a Music</h6>
+								<p class="card__description">
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
+								</p>
+								<span class="card__author-post">Posted by <b>Eugenia</b>, on July  24, 2019</span>
+								<div class="card__btn">
+									<span class="card__btn-text">Continue reading</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="card">
+						<a href="" class="card__link">
+							<div class="card__img-wrap">
+								<img src="img/cards/7.jpg" alt="" class="card__img">
+							</div>
+							<div class="card__text">
+								<h4 class="card__title">bridge</h4>
+								<h6 class="card__subtitle">How to increase your productivity with a Music</h6>
+								<p class="card__description">
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
+								</p>
+								<span class="card__author-post">Posted by <b>Eugenia</b>, on July  24, 2019</span>
+								<div class="card__btn">
+									<span class="card__btn-text">Continue reading</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="card">
+						<a href="" class="card__link">
+							<div class="card__img-wrap">
+								<img src="img/cards/8.jpg" alt="" class="card__img">
+							</div>
+							<div class="card__text">
+								<h4 class="card__title">bridge</h4>
+								<h6 class="card__subtitle">How to increase your productivity with a Music</h6>
+								<p class="card__description">
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
+								</p>
+								<span class="card__author-post">Posted by <b>Eugenia</b>, on July  24, 2019</span>
+								<div class="card__btn">
+									<span class="card__btn-text">Continue reading</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="card">
+						<a href="" class="card__link">
+							<div class="card__img-wrap">
+								<img src="img/cards/9.jpg" alt="" class="card__img">
+							</div>
+							<div class="card__text">
+								<h4 class="card__title">bridge</h4>
+								<h6 class="card__subtitle">How to increase your productivity with a Music</h6>
+								<p class="card__description">
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
+								</p>
+								<span class="card__author-post">Posted by <b>Eugenia</b>, on July  24, 2019</span>
+								<div class="card__btn">
+									<span class="card__btn-text">Continue reading</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="card">
+						<a href="" class="card__link">
+							<div class="card__img-wrap">
+								<img src="img/cards/10.jpg" alt="" class="card__img">
+							</div>
+							<div class="card__text">
+								<h4 class="card__title">bridge</h4>
+								<h6 class="card__subtitle">How to increase your productivity with a Music</h6>
+								<p class="card__description">
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
+								</p>
+								<span class="card__author-post">Posted by <b>Eugenia</b>, on July  24, 2019</span>
+								<div class="card__btn">
+									<span class="card__btn-text">Continue reading</span>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<button class="btn-slash cards__btn-load-more">
+					<span class="btn-slash__text">
+						загрузить ещё
+					</span>
+				</button>
+			</div>
+		</section>
+	</main>
+	<script src="js/script.js"></script>
+</body>
+</html>
